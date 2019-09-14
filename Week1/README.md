@@ -2,7 +2,9 @@
 
 Hack Your Future JavaScript classwork.
 
-## Topics
+## Contents
+
+• Static vs Dynamic Web Sites
 
 • JavaScript introduction
 
@@ -14,13 +16,45 @@ Hack Your Future JavaScript classwork.
 
 • Naming Variables
 
+
+### Static vs Dynamic Web Sites
+
+Up until now at HackYourFuture, we have been writing websites using HTML and CSS. Even though a website written with these two languages works just fine, it is only a static page. Static pages do not change -- their content and design are fixed, and can only be updated by editing the HTML/CSS code manually.
+
+Dynamic sites (like Facebook, Twitter, Youtube) are interactive, users can interact with content on these sites in all sorts of ways.
+
+This is the difference between static and dynamic sites: a static site always has the same information, while a dynamic site changes it's data shown to the user depending on who it is and what their interactivity on the page is. How do we develop dynamic websites? By using Javascript.
+
+#### Backend vs Frontend
+
+There are a few of ways to add dynamicism to web sites:
+
+- by writing code on the backend, 
+- by writing code on the frontend,
+- by writing code on both the frontend and backend.
+
+What do we mean by Frontend and Backend?
+
+- Frontend = Browser
+  - examples: Chrome, Safari, Internet Explorer. They all include an engine that can execute JavaScript in the users browser.
+- Backend = Server
+  - examples: NodeJS (Javascript), Django (Python), Rails (Ruby). 
+
+What are some things you can do on the frontend?
+
+- reacting to user actions such as mouse click events or key presses
+- rendering complex animations
+- sending requests over network to servers and fetching a response
+- performing complex input validation and formatting
+
+What are some things you can do on the backend?
+
+- interact with databases
+
+
+## Topics
+
 ### JavaScript introduction
-
-#### What
-
-JavaScript was created in 1995 by Brendan Eich while he was an engineer at Netscape. It is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g. having complex animations, clickable buttons, popup menus, etc).
-
-Today, it works not only inside the browser, but also on the server(e.g. NodeJS), or actually on any device that has a special program called the JavaScript engine (a computer program that can execute JavaScript code).
 
 #### Why
 
@@ -30,14 +64,11 @@ There are three different pieces to a webpage.
 - **CSS** defines the appearance of the page.
 - **JavaScript** defines behavior of the page.
 
-Up until now at HackYourFuture, we have been writing websites using HTML and CSS. Even though a website written with these two languages works just fine, it is only a static page. These static pages can interact with a visitor only through the use of forms. Once a form is filled out and submitted, a request is sent back to the server where a new static web page is constructed and eventually downloaded into the browser. The big disadavantage of web pages like this is that the only way that a visitor has of interacting with the page is by filling out the form and waiting for a new page to load. It doesn't exhibit any dynamic behaviour like:
+#### What
 
-- reacting to user actions such as mouse click events or key presses
-- rendering complex animations
-- sending requests over network to servers and fetching a response
-- performing complex input validation and formatting
+JavaScript was created in 1995 by Brendan Eich while he was an engineer at Netscape. It is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g. having complex animations, clickable buttons, popup menus, etc).
 
-And this is where JavaScript steps in.
+Today, it works not only inside the browser, but also on the server (e.g. NodeJS), or actually on any device that has a special program called the JavaScript engine (a computer program that can execute JavaScript code).
 
 ### Variables in JavaScript
 
@@ -45,9 +76,9 @@ Any application written in any programming language requires data/information to
 
 In JavaScript, there are three ways of creating a variable.
 
-- var
-- let
-- const
+- `var`
+- `let`
+- `const`
 
 While `var` has been used in JavaScript for a long period of time, `let` and `const` are recent additions to the language being introduced in ES6.
 
