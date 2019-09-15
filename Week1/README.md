@@ -21,9 +21,9 @@ Hack Your Future JavaScript classwork.
 
 Up until now at HackYourFuture, we have been writing websites using HTML and CSS. Even though a website written with these two languages works just fine, it is only a static page. Static pages do not change -- their content and design are fixed, and can only be updated by editing the HTML/CSS code manually.
 
-Dynamic sites (like Facebook, Twitter, Youtube) are interactive, users can interact with content on these sites in all sorts of ways.
+Dynamic sites (like Facebook, Twitter, Youtube) are interactive, users can interact with content on these sites in all sorts of ways automatically without human intervention. How? By writing code!
 
-This is the difference between static and dynamic sites: a static site always has the same information, while a dynamic site changes it's data shown to the user depending on who it is and what their interactivity on the page is. How do we develop dynamic websites? By using Javascript.
+This is the difference between static and dynamic sites: a static site always has the same information, while a dynamic site changes it's data shown to the user depending on who it is and what their interactivity on the page is.
 
 #### Backend vs Frontend
 
@@ -330,7 +330,7 @@ Similar to accessing an array's _elements_ using `index`, we can access _propert
 
 _There are only two hard things in Computer Science: cache invalidation and naming things._
 
-_-- Phil Karlton_
+_-- Phil Karlton (SGI, PARC)_
 
 Naming variables in a clear, meaninful way is actually quite difficult. Here are some basic tips to help.
 
