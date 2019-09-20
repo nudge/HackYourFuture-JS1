@@ -145,7 +145,7 @@ JavaScript has following basic data types or also known as primitive types.
 - `string`
 - `symbol`
 
-[Basic Data Types](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/values.md)
+Must read: [Basic Data Types](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/values.md)
 
 ## Compound Data Types in JavaScript
 
@@ -328,9 +328,9 @@ Similar to accessing an array's _elements_ using `index`, we can access _propert
 
 ## Naming Variables
 
-_There are only two hard things in Computer Science: cache invalidation and naming things._
+> _There are only two hard things in Computer Science: cache invalidation and naming things._
 
-_-- Phil Karlton (SGI, PARC)_
+> _-- Phil Karlton (SGI, PARC)_
 
 Naming variables in a clear, meaninful way is actually quite difficult. Here are some basic tips to help.
 
