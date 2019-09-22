@@ -55,7 +55,8 @@ Must read: [Statements & Expressions](https://github.com/HackYourFuture/fundamen
 
 ## Operators
 
-Operators represent an in-built action on data, . 
+Operators are used in expressions and represent an in-built action to perform on data, which results in a value.
+
 - Comparison, equality an relational, eg: `===`, `!==`, `<`, `>` 
 - Arithmetic, work on numbers, eg: `+`, `-`, `*` `/`
 - Logical, work on booleans, eg: `&&`, `||`, `!`
