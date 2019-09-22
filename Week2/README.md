@@ -23,7 +23,7 @@ Hack Your Future JavaScript classwork.
 - Some string functions: `toUpperCase()`
 - Tips for naming variables
 
-Last week was focused on data in Javascript: how we can refrence data, and the types of data we can represent in Javascript.
+Last week was focused on data in Javascript: how we can reference and store data, and the types of data we can represent in Javascript.
 We went through some simple functions we can do with some data (particularily arrays and strings).
 
 This will we will continue to learn more about how we can manipulate data in Javascript.
