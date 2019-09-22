@@ -55,10 +55,12 @@ Must read: [Statements & Expressions](https://github.com/HackYourFuture/fundamen
 
 ## Operators
 
+Some common operators:
+
 - Comparison, equality an relational, eg: `===`, `!==`, `<`, `>` , result: boolean
 - Arithmetic, work on numbers, eg: `+`, `-`, `*` `/`, result: number
 - Logical, work on booleans, eg: `&&`, `||`, `!`, result: boolean
-- Concatenation, works on strings. eg: `+`, result: string
+- String, works on strings. eg: `+`, result: string
 - Assignment, eg: `=`, `+=`, result: value
 
 Must read: [Operators](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/operators.md
