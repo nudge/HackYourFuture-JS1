@@ -23,10 +23,10 @@ Hack Your Future JavaScript classwork.
 - Some string functions: `toUpperCase()`
 - Tips for naming variables
 
-Last week was focused on data in Javascript: how we can reference and store data, and the types of data we can represent in Javascript.
+Last week was focused on data in Javascript: how we can reference and store values, and the types of data we can represent in Javascript.
 We went through some simple functions we can do with some data (particularily arrays and strings).
 
-This will we will continue to learn more about how we can manipulate data in Javascript.
+This week will we will continue to learn more about how we can manipulate data in Javascript.
 
 ## Statements & Expressions
 
@@ -55,7 +55,7 @@ Must read: [Statements & Expressions](https://github.com/HackYourFuture/fundamen
 
 ## Operators
 
-Operators are used in expressions and represent an in-built action to perform on data, which results in a value.
+Operators are used in expressions .
 
 - Comparison, equality an relational, eg: `===`, `!==`, `<`, `>` 
 - Arithmetic, work on numbers, eg: `+`, `-`, `*` `/`
