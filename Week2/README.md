@@ -32,8 +32,7 @@ This will we will continue to learn more about how we can manipulate data in Jav
 
 Statements do something.
 
-We've seen some statements last week:
-Declaring, initializing, and assigning variables are statements.
+We've seen some statements last week: Declaring, initializing, and assigning variables are statements. Statements end in a semicolon `;`.
 
 Expressions reduce down to a value.
 
@@ -48,9 +47,11 @@ console.log(str3); // expect: 'Hello World'
 
 ```
 const str3 = str1 + str2;
-             |----------| expression
+             |---------|  expression
 |-----------------------| statement
 ```
+
+Statements can contain expressions. Expressions cannot contain statements. However, expressions can contain other expressions.
 
 
 Must read: [Statements & Expressions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/statements_expressions.md)
