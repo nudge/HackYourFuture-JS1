@@ -30,13 +30,7 @@ This will we will continue to learn more about how we can manipulate data in Jav
 
 ## Statements & Expressions
 
-Statements do something.
-
-Statements end in a semicolon `;`.
-
-Expressions reduce down to a value.
-
-We had a quick glimpse at expressions last week:
+We had a quick glimpse of statements and expressions last week, take this example:
 ```javascript
 const str1 = new String('Hello ');
 const str2 = new String('World');
@@ -51,8 +45,11 @@ const str3 = str1 + str2;
 |-----------------------| statement
 ```
 
-Statements can contain expressions. Expressions cannot contain statements. However, expressions can contain other expressions.
+Statements do something. Statements end in a semicolon `;`.
 
+Expressions reduce down to a value.
+
+Statements can contain expressions. Expressions cannot contain statements. However, expressions can contain other expressions.
 
 Must read: [Statements & Expressions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/statements_expressions.md)
 
