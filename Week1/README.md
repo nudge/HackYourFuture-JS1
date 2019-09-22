@@ -235,6 +235,10 @@ Arrays are one of the complex data types in JavaScript which represent a collect
 
     and can find out the length of an array using `arr1.length` property.
 
+    ```JavaScript
+    arr1.length; // 5
+    ```
+    
 - Commonly used array methods
 
     - [push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) - add items to the end of an array
