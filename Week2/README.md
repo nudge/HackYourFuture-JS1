@@ -55,12 +55,10 @@ Must read: [Statements & Expressions](https://github.com/HackYourFuture/fundamen
 
 ## Operators
 
-Operators are used in expressions .
-
-- Comparison, equality an relational, eg: `===`, `!==`, `<`, `>` , result in a boolean
-- Arithmetic, work on numbers, eg: `+`, `-`, `*` `/`, result in a number
-- Logical, work on booleans, eg: `&&`, `||`, `!`, result in a boolean
-- Assignment, eg: `=`, `+=`
+- Comparison, equality an relational, eg: `===`, `!==`, `<`, `>` , result: boolean
+- Arithmetic, work on numbers, eg: `+`, `-`, `*` `/`, result: number
+- Logical, work on booleans, eg: `&&`, `||`, `!`, result: boolean
+- Assignment, eg: `=`, `+=`, result: value
 
 Must read: [Operators](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/operators.md
 )
