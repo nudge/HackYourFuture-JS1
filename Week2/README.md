@@ -57,9 +57,9 @@ Must read: [Statements & Expressions](https://github.com/HackYourFuture/fundamen
 
 Operators are used in expressions .
 
-- Comparison, equality an relational, eg: `===`, `!==`, `<`, `>` 
-- Arithmetic, work on numbers, eg: `+`, `-`, `*` `/`
-- Logical, work on booleans, eg: `&&`, `||`, `!`
+- Comparison, equality an relational, eg: `===`, `!==`, `<`, `>` , result in a boolean
+- Arithmetic, work on numbers, eg: `+`, `-`, `*` `/`, result in a number
+- Logical, work on booleans, eg: `&&`, `||`, `!`, result in a boolean
 - Assignment, eg: `=`, `+=`
 
 Must read: [Operators](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/operators.md
