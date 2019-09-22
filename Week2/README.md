@@ -102,4 +102,4 @@ Must read: [Conditional Execution](https://github.com/HackYourFuture/fundamental
 
 Focus for Week 3.
 
-Must read: [Functions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/functions.md)
+[Functions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/functions.md)
