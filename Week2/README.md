@@ -32,7 +32,7 @@ This will we will continue to learn more about how we can manipulate data in Jav
 
 Statements do something.
 
-We've seen some statements last week: Declaring, initializing, and assigning variables are statements. Statements end in a semicolon `;`.
+Statements end in a semicolon `;`.
 
 Expressions reduce down to a value.
 
