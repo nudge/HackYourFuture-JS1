@@ -36,7 +36,7 @@ Statements end in a semicolon `;`.
 
 Expressions reduce down to a value.
 
-We had a quick glimpse at an expression last week:
+We had a quick glimpse at expressions last week:
 ```javascript
 const str1 = new String('Hello ');
 const str2 = new String('World');
@@ -85,7 +85,7 @@ Must read: [Loops](https://github.com/HackYourFuture/fundamentals/blob/master/fu
 
 ## Conditionals
 
-Computers are still very fast calculators. As such, we must instruct the computer what to do in every case or else unexpected errors may happen. We use conditional statements.
+Computers are still quite 'dumb', as such we must instruct the computer what to do in every case or else unexpected errors may happen. To do this, we use conditional statements.
 
 - `if` & `switch`
 - Tenary operator
