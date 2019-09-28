@@ -126,9 +126,20 @@ let sum = function (a, b) {
 sum(1, 2);
 ```
 
+Why is this useful? This is useful for _event handling_, a common programming pattern in Javascript on the web. Example of an event (You will learn about events in Javascript 2.):
+
+```JavaScript
+var btn = document.querySelector('button');
+
+btn.onclick = function() {
+  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  document.body.style.backgroundColor = rndCol;
+}
+```
+
 The difference between a function statement and a fuction expression is that function expressions do not need names, ie. it is possible to have anonymous functions.
 
-This is useful in _callbacks_ and _event handling_, both common programming patterns. Example of a callback:
+Why is this useful? This is useful in _callbacks_, a common programming pattern. Example of a callback:
 
 ```JavaScript
 function processUserInput(callback) {
@@ -167,18 +178,6 @@ function processUserInput(callback) {
 }
 
 processUserInput(greeting);
-```
-
-
-Example of an event (You will learn about events in Javascript 2.):
-
-```JavaScript
-var btn = document.querySelector('button');
-
-btn.onclick = function() {
-  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-  document.body.style.backgroundColor = rndCol;
-}
 ```
 
 ### Arrow function
