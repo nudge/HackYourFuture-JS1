@@ -116,7 +116,7 @@ s.trim(); // -> "this is a string"
 
 ### Function expression
 
-The cool thing with Javascript is that functions can be stored as variables too! You can think of variables not only referencing data, but also code.
+The cool thing with Javascript is that functions can be used like variables too! You can think of variables not only referencing data, but also code.
 
 ```JavaScript
 let sum = function (a, b) {
@@ -126,11 +126,26 @@ let sum = function (a, b) {
 sum(1, 2);
 ```
 
-This is useful in _callbacks_ and _event handlong_, both common programming patterns. Example of a callback:
+The difference between a function statement and a fuction expression is that function expressions do not need names, ie. it is possible to have anonymous functions.
+
+This is useful in _callbacks_ and _event handling_, both common programming patterns. Example of a callback:
 
 ```JavaScript
-function greeting(name) {
-  alert('Hello ' + name);
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
+
+processUserInput(function(name) {
+  console.log('Hello ' + name);
+});
+```
+
+The same as:
+```JavaScript
+function greeting(name)
+{
+  console.log('Hello ' + name);
 }
 
 function processUserInput(callback) {
@@ -139,6 +154,35 @@ function processUserInput(callback) {
 }
 
 processUserInput(greeting);
+```
+
+And also:
+```JavaScript
+let greeting = function(name)
+{
+  console.log('Hello ' + name);
+}
+
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
+
+processUserInput(greeting);
+```
+
+```JavaScript
+let greeting = function(name) {
+  console.log('Hello ' + name);
+}
+
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
+console.log("Start");
+processUserInput(greeting);
+console.log("End");
 ```
 
 Example of an event (You will learn about events in Javascript 2.):
