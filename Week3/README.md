@@ -145,8 +145,8 @@ Why is this useful? This is useful in _callbacks_, a common programming pattern.
 
 ```JavaScript
 function processUserInput(callback) {
-  var name = prompt('Please enter your name.');
-  callback(name);
+  var myName = prompt('Please enter your name.');
+  callback(myName);
 }
 
 processUserInput(function(name) {
@@ -162,8 +162,8 @@ function greeting(name)
 }
 
 function processUserInput(callback) {
-  var name = prompt('Please enter your name.');
-  callback(name);
+  var myName = prompt('Please enter your name.');
+  callback(myName);
 }
 
 processUserInput(greeting);
@@ -175,8 +175,8 @@ let greeting = function(name)
 }
 
 function processUserInput(callback) {
-  var name = prompt('Please enter your name.');
-  callback(name);
+  var myName = prompt('Please enter your name.');
+  callback(myName);
 }
 
 processUserInput(greeting);
