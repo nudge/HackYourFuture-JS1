@@ -141,7 +141,7 @@ processUserInput(function(name) {
 });
 ```
 
-You can do the same using function statements and function expressions too, with more code:
+You can do the same using named functions too (both function statement and function expression variants), but with more code:
 ```JavaScript
 function greeting(name)
 {
