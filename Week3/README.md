@@ -40,7 +40,7 @@ We also learnt about more ways to work with data using operators:
 
 - Operators (arithmetic, comparison, eg `+`, `*`, `&&`, `||`, etc).
 
-  
+
 This week, we'll learn about how to organize your code into units called functions.
 
 
@@ -49,7 +49,7 @@ This week, we'll learn about how to organize your code into units called functio
 Functions are a way to organize your code in to re-usable chunks.
 
 > People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones.
-> 
+>
 > _-- Donald Knuth_
 
 
@@ -85,7 +85,7 @@ function sum(a, b) {
 }
 ```
 
-A function can take _parameters_ and _return_ a value.
+A function may take _parameters_ and _return_ a value.
 
 Declaring a function does not invoke it, you must _call_ it for it to run.
 
@@ -126,17 +126,23 @@ let sum = function (a, b) {
 sum(1, 2);
 ```
 
-Why is this useful? This is useful for _event handling_, a common programming pattern in Javascript on the Web. Example of  event handling (You will learn about events in Javascript 2.):
+Why is this useful? This is useful for _event handling_, a common programming pattern in Javascript on the Web. Example of event handling (You will learn about events in Javascript 2):
 
 ```JavaScript
-var btn = document.querySelector('button');
+  function random(maxValue) {
+    return Math.floor(Math.random() * Math.floor(maxValue));
+  }
 
-btn.onclick = function() {
-  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-  document.body.style.backgroundColor = rndCol;
-}
+  var btn = document.querySelector("button");
+  btn.onclick = function() {
+    var rndCol =
+      "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+    document.body.style.backgroundColor = rndCol;
+  };
 ```
-It also means you can pass a function as an argument, as you would any other variable. An example:
+It also means you can pass a function as an argument, as you would any other variable. Why is this useful? This is useful in _callbacks_, a common programming pattern.
+
+An example:
 
 ```JavaScript
 let greeting = function(name)
@@ -154,9 +160,7 @@ processUserInput(greeting);
 
 #### Anonymous Functions
 
-The difference between a function statement and a fuction expression is that function expressions do not need names, ie. it is possible to have anonymous functions.
-
-Why is this useful? This is useful in _callbacks_, a common programming pattern. Example of a callback:
+The difference between a function statement and a fuction expression is that function expressions do not need names, ie. it is possible to have anonymous functions. Its a shorter way to write what we saw above. An example:
 
 ```JavaScript
 function processUserInput(callback) {
@@ -171,7 +175,7 @@ processUserInput(function(name) {
 
 You can do the same using named functions too (both function statement and function expression variants), but with more code:
 ```JavaScript
-function greeting(name)
+let greeting = function(name)
 {
   console.log('Hello ' + name);
 }
@@ -184,7 +188,7 @@ function processUserInput(callback) {
 processUserInput(greeting);
 ```
 ```JavaScript
-let greeting = function(name)
+function greeting(name)
 {
   console.log('Hello ' + name);
 }
@@ -218,7 +222,3 @@ Scopes will pop up again in Javascript 2.
 ## Javascript in HTML
 
 ![Client/Server](./assets/js-client-server.png)
-
-
-
-

@@ -20,7 +20,7 @@
   }
 
   // ----------------------------------------
-  // Event Handling examples
+  // Event Handling example
 
   // Example of a function statement
   function random(maxValue) {
