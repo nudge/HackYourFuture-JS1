@@ -137,6 +137,8 @@ btn.onclick = function() {
 }
 ```
 
+#### Anonymous Functions
+
 The difference between a function statement and a fuction expression is that function expressions do not need names, ie. it is possible to have anonymous functions.
 
 Why is this useful? This is useful in _callbacks_, a common programming pattern. Example of a callback:
