@@ -56,6 +56,7 @@ Functions are a way to organize your code in to re-usable chunks.
 Functions can be grouped together to make a module (or library), and then modules can be imported into your application so you can build awesome apps!
 
 Must read: [Functions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/functions.md)
+
 More reading: [MDN: Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
 
 Many ways to declare a function:
@@ -125,7 +126,7 @@ let sum = function (a, b) {
 sum(1, 2);
 ```
 
-This is useful in _callbacks_ and _events_, a common programming pattern. Example of a callback:
+This is useful in _callbacks_ and _event handlong_, both common programming patterns. Example of a callback:
 
 ```JavaScript
 function greeting(name) {
@@ -150,7 +151,6 @@ btn.onclick = function() {
   document.body.style.backgroundColor = rndCol;
 }
 ```
-
 
 ### Arrow function
 
