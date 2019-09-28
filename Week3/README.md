@@ -141,7 +141,7 @@ processUserInput(function(name) {
 });
 ```
 
-The same as:
+You can do the same using function statements and function expressions too, with more code:
 ```JavaScript
 function greeting(name)
 {
@@ -155,8 +155,6 @@ function processUserInput(callback) {
 
 processUserInput(greeting);
 ```
-
-And also:
 ```JavaScript
 let greeting = function(name)
 {
@@ -171,19 +169,6 @@ function processUserInput(callback) {
 processUserInput(greeting);
 ```
 
-```JavaScript
-let greeting = function(name) {
-  console.log('Hello ' + name);
-}
-
-function processUserInput(callback) {
-  var name = prompt('Please enter your name.');
-  callback(name);
-}
-console.log("Start");
-processUserInput(greeting);
-console.log("End");
-```
 
 Example of an event (You will learn about events in Javascript 2.):
 
