@@ -136,6 +136,21 @@ btn.onclick = function() {
   document.body.style.backgroundColor = rndCol;
 }
 ```
+It also means you can pass a function as an argument, as you would any other variable. An example:
+
+```JavaScript
+let greeting = function(name)
+{
+  console.log('Hello ' + name);
+}
+
+function processUserInput(callback) {
+  var myName = prompt('Please enter your name.');
+  callback(myName);
+}
+
+processUserInput(greeting);
+```
 
 #### Anonymous Functions
 
