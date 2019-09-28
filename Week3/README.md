@@ -126,7 +126,7 @@ let sum = function (a, b) {
 sum(1, 2);
 ```
 
-Why is this useful? This is useful for _event handling_, a common programming pattern in Javascript on the web. Example of an event (You will learn about events in Javascript 2.):
+Why is this useful? This is useful for _event handling_, a common programming pattern in Javascript on the Web. Example of  event handling (You will learn about events in Javascript 2.):
 
 ```JavaScript
 var btn = document.querySelector('button');
