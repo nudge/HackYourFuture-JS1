@@ -56,6 +56,7 @@ Functions are a way to organize your code in to re-usable chunks.
 Functions can be grouped together to make a module (or library), and then modules can be imported into your application so you can build awesome apps!
 
 Must read: [Functions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/functions.md)
+More reading: [MDN: Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
 
 Many ways to declare a function:
 
@@ -102,6 +103,16 @@ let result = sum(1, 2);
 console.log(result);
 ```
 
+Functions can also be called "on things" like so:
+
+```JavaScript
+Math.round(4.5);
+console.log("hello");
+Array.from([1, 2, 3]);
+let s = " this is a string  ";
+s.trim(); // -> "this is a string"
+```
+
 ### Function expression
 
 The cool thing with Javascript is that functions can be stored as variables too! You can think of variables not only referencing data, but also code.
@@ -114,17 +125,30 @@ let sum = function (a, b) {
 sum(1, 2);
 ```
 
-This is useful in _callbacks_, a common programming pattern.
+This is useful in _callbacks_ and _events_, a common programming pattern. Example of a callback:
 
 ```JavaScript
-let sum = function (a, b, cb) {
-  let result = a + b;
-  cb(result);
+function greeting(name) {
+  alert('Hello ' + name);
 }
 
-sum(1, 2, function (result) {
-  console.log(result);
-});
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
+
+processUserInput(greeting);
+```
+
+Example of an event (You will learn about events in Javascript 2.):
+
+```JavaScript
+var btn = document.querySelector('button');
+
+btn.onclick = function() {
+  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  document.body.style.backgroundColor = rndCol;
+}
 ```
 
 
@@ -137,6 +161,8 @@ Reading: [MDN: Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/Jav
 ## Scopes
 
 Scopes define the visiblity of declarations of variables and functions.
+
+The top level outside all your functions is called the _global scope_. Values defined in the global scope are accessible from everywhere in the code.
 
 ![Scopes](./assets/scopes.png)
 
