@@ -211,9 +211,48 @@ Scopes define the visiblity of declarations of variables and functions.
 
 The top level outside all your functions is called the _global scope_. Values defined in the global scope are accessible from everywhere in the code.
 
+- `var` and `function` declarations are visible with function scope.
+- `let` and `const` declarations are visible with block scope.
+
 ![Scopes](./assets/scopes.png)
 
-An example:
+Another example:
+
+```Javascript
+let villan = "Joker";              // | global scope
+                                   // |
+function myFunction() {            // |  | function scope
+    let hero = "Batman";           // |  |
+    console.log(hero); // Batman   // |  |
+    console.log(villan); // Joker  // |  |
+}                                  // |  |
+                                   // |
+myFunction();                      // |
+```
+
+Another example:
+
+```Javascript
+let villan = "Joker";              // | global scope
+                                   // |
+function myFunction() {            // |  | function scope
+    let hero = "Batman";           // |  |
+    if (hero === "Batman") {       // |  |  | block scope
+        let coHero = "Robin";      // |  |  |
+        console.log(hero);         // |  |  |
+        console.log(coHero);       // |  |  |
+        console.log(villan);       // |  |  |
+    }                              // |  |  |
+    console.log("------")          // |  |
+    console.log(hero);             // |  |
+    console.log(coHero);           // |  |
+    console.log(villan);           // |  |
+}                                  // |  |
+                                   // |
+myFunction();                      // |
+```
+
+What happens if we use the same variable name in different scopes?
 
 ```Javascript
 function myFunction() {
@@ -222,14 +261,11 @@ function myFunction() {
         let hero = "The Flash";
         console.log(hero); // The Flash
     }
-    console.log(hero);     // Batman
+    console.log(hero); // Batman
 }
 
 myFunction();
 ```
-
-- `var` and `function` declarations are visible with function scope.
-- `let` and `const` declarations are visible with block scope.
 
 Scopes will pop up again in Javascript 2.
 
@@ -240,6 +276,16 @@ Declarations (not initializations) are hoisted to the top of their scope.
 - `var` and `function` declarations are hoisted to the top of their enclosing function scope.
 
 An example:
+
+```Javascript
+myFunction();
+
+function myFunction() {
+    console.log("Hello world!");
+}
+```
+
+Another example:
 
 ```Javascript
 function myFunction() {
