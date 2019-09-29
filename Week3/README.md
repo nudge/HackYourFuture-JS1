@@ -124,7 +124,7 @@ let sum = function (a, b) {
 sum(1, 2);
 ```
 
-Why is this useful? This is useful for _event handling_, a common programming pattern in Javascript on the Web. Example of event handling (You will learn about events in Javascript 2):
+__Why is this useful?__ This is useful for _event handling_, a common programming pattern in Javascript on the Web. Example of event handling (You will learn about events in Javascript 2):
 
 ```JavaScript
   function random(maxValue) {
@@ -138,7 +138,9 @@ Why is this useful? This is useful for _event handling_, a common programming pa
     document.body.style.backgroundColor = rndCol;
   };
 ```
-It also means you can pass a function as an argument, as you would any other variable. Why is this useful? This is useful in _callbacks_, a common programming pattern.
+It also means you can pass a function as an argument, as you would any other variable.
+
+__Why is this useful?__ This is useful in _callbacks_, a common programming pattern.
 
 An example:
 
@@ -219,37 +221,37 @@ The top level outside all your functions is called the _global scope_. Values de
 Another example:
 
 ```Javascript
-let villan = "Joker";              // | global scope
-                                   // |
-function myFunction() {            // |  | function scope
-    let hero = "Batman";           // |  |
-    console.log(hero); // Batman   // |  |
-    console.log(villan); // Joker  // |  |
-}                                  // |  |
-                                   // |
-myFunction();                      // |
+let villan = "Joker";                        // | global scope
+                                             // |
+function myFunction() {                      // |  | function scope
+    let hero = "Batman";                     // |  |
+    console.log(hero); // Batman             // |  |
+    console.log(villan); // Joker            // |  |
+}                                            // |  |
+                                             // |
+myFunction();                                // |
 ```
 
 Another example:
 
 ```Javascript
-let villan = "Joker";              // | global scope
-                                   // |
-function myFunction() {            // |  | function scope
-    let hero = "Batman";           // |  |
-    if (hero === "Batman") {       // |  |  | block scope
-        let coHero = "Robin";      // |  |  |
-        console.log(hero);         // |  |  |
-        console.log(coHero);       // |  |  |
-        console.log(villan);       // |  |  |
-    }                              // |  |  |
-    console.log("------")          // |  |
-    console.log(hero);             // |  |
-    console.log(coHero);           // |  |
-    console.log(villan);           // |  |
-}                                  // |  |
-                                   // |
-myFunction();                      // |
+let villan = "Joker";                        // | global scope
+                                             // |
+function myFunction() {                      // |  | function scope
+    let hero = "Batman";                     // |  |
+    if (hero === "Batman") {                 // |  |  | block scope
+        let coHero = "Robin";                // |  |  |
+        console.log(hero);                   // |  |  |
+        console.log(coHero);                 // |  |  |
+        console.log(villan);                 // |  |  |
+    }                                        // |  |  |
+    console.log("------")                    // |  |
+    console.log(hero);                       // |  |
+    console.log(coHero);                     // |  |
+    console.log(villan);                     // |  |
+}                                            // |  |
+                                             // |
+myFunction();                                // |
 ```
 
 What happens if we use the same variable name in different scopes?
@@ -259,15 +261,15 @@ function myFunction() {
     let hero = "Batman";
     if (true) {
         let hero = "The Flash";
-        console.log(hero); // The Flash
+        console.log(hero);
     }
-    console.log(hero); // Batman
+    console.log(hero);
 }
 
 myFunction();
 ```
 
-Scopes will pop up again in Javascript 2.
+Scopes will pop up again in Javascript 2 (closures and `this` keyword).
 
 ### Hoisting
 
@@ -303,6 +305,6 @@ More reading: [MDN: Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/
 
 ## Javascript in HTML
 
-See index.html and index.js files for an example. Ordering of scripts is important, Web brwosers will parse the HTML and JS files from top to bottom.
+See index.html and index.js files for an example. Ordering of scripts is important, Web browsers will parse the HTML and JS files from top to bottom.
 
 ![Client/Server](./assets/js-client-server.png)
