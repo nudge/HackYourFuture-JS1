@@ -203,7 +203,7 @@ processUserInput(greeting);
 
 ### Arrow function
 
-Similar to a function expression, with some differences. This is covered in Javascript 2.
+Similar to a function expression, with some differences. This is covered in Javascript 2. If you are intersted, you can read more below.
 
 Reading: [MDN: Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
@@ -215,10 +215,35 @@ The top level outside all your functions is called the _global scope_. Values de
 
 ![Scopes](./assets/scopes.png)
 
-Hoisting
+An example:
+
+```Javascript
+function myFunction() {
+    let hero = "Batman";
+    if (true) {
+        let hero = "The Flash";
+        console.log(hero); // The Flash
+    }
+    console.log(hero);     // Batman
+}
+
+myFunction();
+```
 
 Scopes will pop up again in Javascript 2.
 
+### Hoisting
+
+Declarations are hoisted to the top of their scope.
+
+- `let` and `const` declarations are hoisted with block scope.
+- `var` and `function` declarations are hoisted with function scope.
+
+More reading: [MDN: Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+
 ## Javascript in HTML
+
+See index.html and index.js files for an example. Ordering of scripts is important, Web brwosers will parse the HTML and JS files from top to bottom.
+
 
 ![Client/Server](./assets/js-client-server.png)
