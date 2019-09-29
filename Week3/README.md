@@ -8,8 +8,6 @@ Hack Your Future JavaScript classwork.
 
 • Scopes
 
-• Think like a Programmer
-
 • Javascript in HTML
 
 ## Recap
@@ -230,20 +228,35 @@ function myFunction() {
 myFunction();
 ```
 
+- `var` and `function` declarations are visible with function scope.
+- `let` and `const` declarations are visible with block scope.
+
 Scopes will pop up again in Javascript 2.
 
 ### Hoisting
 
-Declarations are hoisted to the top of their scope.
+Declarations (not initializations) are hoisted to the top of their scope.
 
-- `let` and `const` declarations are hoisted with block scope.
-- `var` and `function` declarations are hoisted with function scope.
+- `var` and `function` declarations are hoisted to the top of their enclosing function scope.
+
+An example:
+
+```Javascript
+function myFunction() {
+   theHero();  // Arrow
+   return;
+   function theHero() {
+       console.log("Arrow");
+   }
+}
+
+myFunction();
+```
 
 More reading: [MDN: Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 
 ## Javascript in HTML
 
 See index.html and index.js files for an example. Ordering of scripts is important, Web brwosers will parse the HTML and JS files from top to bottom.
-
 
 ![Client/Server](./assets/js-client-server.png)
