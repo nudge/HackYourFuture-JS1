@@ -50,8 +50,9 @@ Functions are a way to organize your code in to re-usable chunks.
 >
 > _-- Donald Knuth_
 
-
-Functions can be grouped together to make a module (or library), and then modules can be imported into your application so you can build awesome apps!
+Why functions?
+- __Reusability__: Functions can be grouped together to make a module (or library), and then modules can be imported into your application so you can build awesome apps!
+- __Abstraction__: Hide underlying details about how a piece of functionality works under the hood. You can change how things are implemented within the function without other programmers who use your function worrying aobut the exact details of how it was implemented.
 
 Must read: [Functions](https://github.com/HackYourFuture/fundamentals/blob/master/fundamentals/functions.md)
 
